@@ -112,19 +112,19 @@ int main(int argc, char* argv[])
 		OUT_INFO("Level info: \n");
 		for(int i = 0; i < iVolumeChannels; ++i) {
 			OUT_INFO(" InputVolumeChannel %02i: ", i);
-			OUT_INFO("%02i\n", vols[i]->m_lLevels);
+			OUT_INFO("%02li\n", vols[i]->m_lLevels);
 		}
 
 		OUT_INFO("Level mapping: \n");
 		OUT_INFO("                         ");
 		for(long l = 0; l < lLevels; ++l) {
-			OUT_INFO("%02i ", l);
+			OUT_INFO("%02li ", l);
 		}
 		OUT_INFO("\n");
 		for(int i = 0; i < iVolumeChannels; ++i) {
 			OUT_INFO(" OutputVolumeChannel %02i: ", i);
 			for(long l = 0; l < lLevels; ++l) {
-				OUT_INFO("%02i ", levels[i][l]);
+				OUT_INFO("%02li ", levels[i][l]);
 			}
 			OUT_INFO("\n");
 		}

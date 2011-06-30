@@ -32,6 +32,14 @@
 #include "../BasicVolume.h"
 
 #define TYPE float
+#ifndef WIN32
+#ifndef min
+#define min(x,y) ((x) < (y) ? (x) : (y))
+#endif
+#ifndef max
+#define max(x,y) ((x) > (y) ? (x) : (y))
+#endif
+#endif
 
 int main(int argc, char* argv[]) {
 	if(argc < 6) {
