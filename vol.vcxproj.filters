@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Volumes">
+      <UniqueIdentifier>{7a9f4bdc-a3a1-4246-8541-cbe3859d6481}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Helper">
+      <UniqueIdentifier>{c35f7cd6-ddb8-41a8-966a-eec836a57c1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Cuda">
+      <UniqueIdentifier>{f0a0eb13-d7dd-4711-ad3f-5395f9074c60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Cuda">
+      <UniqueIdentifier>{15e5ecc4-a3d1-4b8a-8005-7fdb37ac1804}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Kernels">
+      <UniqueIdentifier>{4657b647-2eb5-4737-a439-5bf893fee97b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Volumes">
+      <UniqueIdentifier>{d12f779d-aee5-411a-8c00-db37b8a2bb8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CPU">
+      <UniqueIdentifier>{804c8aec-9185-49c0-9085-5ea2938484d8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VolumeProcessor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicVolume.h">
+      <Filter>Header Files\Volumes</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneralVolume.h">
+      <Filter>Header Files\Volumes</Filter>
+    </ClInclude>
+    <ClInclude Include="MultilevelVolume.h">
+      <Filter>Header Files\Volumes</Filter>
+    </ClInclude>
+    <ClInclude Include="FileHandle.h">
+      <Filter>Header Files\Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files\Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="typenaming.h">
+      <Filter>Header Files\Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="cutil_replacement.h">
+      <Filter>Header Files\Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="dwtForward.h">
+      <Filter>Header Files\Cuda</Filter>
+    </ClInclude>
+    <ClInclude Include="cuda_type_conversion.h">
+      <Filter>Header Files\Cuda</Filter>
+    </ClInclude>
+    <ClInclude Include="2ddwt_kernel.h">
+      <Filter>Header Files\Kernels</Filter>
+    </ClInclude>
+    <ClInclude Include="copy_kernel.h">
+      <Filter>Header Files\Kernels</Filter>
+    </ClInclude>
+    <ClInclude Include="timing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="modulusMaxima.h">
+      <Filter>Header Files\Cuda</Filter>
+    </ClInclude>
+    <ClInclude Include="angle_kernel.h">
+      <Filter>Header Files\Kernels</Filter>
+    </ClInclude>
+    <ClInclude Include="modulus_kernel.h">
+      <Filter>Header Files\Kernels</Filter>
+    </ClInclude>
+    <ClInclude Include="maxima_kernel.h">
+      <Filter>Header Files\Kernels</Filter>
+    </ClInclude>
+    <ClInclude Include="calculateLipschitz.h">
+      <Filter>Header Files\Cuda</Filter>
+    </ClInclude>
+    <ClInclude Include="lipschitz_kernel.h">
+      <Filter>Header Files\Kernels</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel_vector_helper.h">
+      <Filter>Header Files\Cuda</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu_vector_helper.h">
+      <Filter>Header Files\Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="threshold_kernel.h">
+      <Filter>Header Files\Kernels</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="vol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="typenaming.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VolumeProcessor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneralVolume.cpp">
+      <Filter>Source Files\Volumes</Filter>
+    </ClCompile>
+    <ClCompile Include="global.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="calculateLipschitzCPU.cpp">
+      <Filter>Source Files\CPU</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="dwtForward.cu">
+      <Filter>Source Files\Cuda</Filter>
+    </CudaCompile>
+    <CudaCompile Include="modulusMaxima.cu">
+      <Filter>Source Files\Cuda</Filter>
+    </CudaCompile>
+    <CudaCompile Include="calculateLipschitz.cu">
+      <Filter>Source Files\Cuda</Filter>
+    </CudaCompile>
+  </ItemGroup>
+</Project>
