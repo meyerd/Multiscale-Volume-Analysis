@@ -66,7 +66,7 @@ On Linux use the supplied cmake files.
 Customize in the CMakeLists.txt
 
      set(CUDA_TOOLKIT_ROOT_DIR ~/CUDA_SDK)
-     set(CUDA_SDK\_ROOT_DIR ~/CUDA_SDK)
+     set(CUDA_SDK_ROOT_DIR ~/CUDA_SDK)
      
      set(CUDA_NVCC_FLAGS --compiler-bindir ~/CUDA_SDK/gcc/)
      
