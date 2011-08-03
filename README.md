@@ -1,7 +1,7 @@
 vol & volume\_helpers
 =====================
 
-Multiscale volume processing and Lipschitz/Hölder exponent estimation on
+Multiscale volume processing and Lipschitz/Hoelder exponent estimation on
 volumetric datasets. It is the implementation of the work presented in the
 master's thesis "GPU-based Multiscale Analysis of Volume Data", available 
 here https://github.com/downloads/meyerd/Multiscale-Volume-Analysis/thesis.pdf.
@@ -53,7 +53,7 @@ installed correctly everything should work.
 If you like to build the project with cmake customize the CMakeLists.txt
 and customize the variable CUD\_TOOLKIT\_ROOT\_DIR to 
 
-set(CUDA\_TOOLKIT\_ROOT\_DIR $ENV{CUDA\_PATH})
+     set(CUDA\_TOOLKIT\_ROOT\_DIR $ENV{CUDA\_PATH})
 
 for example.
 
@@ -65,12 +65,12 @@ Linux
 On Linux use the supplied cmake files.
 Customize in the CMakeLists.txt
 
-set(CUDA\_TOOLKIT\_ROOT\_DIR ~/CUDA\_SDK)
-set(CUDA\_SDK\_ROOT\_DIR ~/CUDA\_SDK)
-
-set(CUDA\_NVCC\_FLAGS --compiler-bindir ~/CUDA\_SDK/gcc/)
-
-set(CUDA\_BUILD\_EMULATION OFF)
-set(CUDA\_BUILD\_CUBIN ON)
+     set(CUDA\_TOOLKIT\_ROOT\_DIR ~/CUDA\_SDK)
+     set(CUDA\_SDK\_ROOT\_DIR ~/CUDA\_SDK)
+     
+     set(CUDA\_NVCC\_FLAGS --compiler-bindir ~/CUDA\_SDK/gcc/)
+     
+     set(CUDA\_BUILD\_EMULATION OFF)
+     set(CUDA\_BUILD\_CUBIN ON)
 
 then run cmake and build the projects with make.
