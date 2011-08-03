@@ -53,7 +53,7 @@ installed correctly everything should work.
 If you like to build the project with cmake customize the CMakeLists.txt
 and customize the variable CUD\_TOOLKIT\_ROOT\_DIR to 
 
-     set(CUDA\_TOOLKIT\_ROOT\_DIR $ENV{CUDA\_PATH})
+     set(CUDA_TOOLKIT_ROOT_DIR $ENV{CUDA_PATH})
 
 for example.
 
@@ -65,12 +65,12 @@ Linux
 On Linux use the supplied cmake files.
 Customize in the CMakeLists.txt
 
-     set(CUDA\_TOOLKIT\_ROOT\_DIR ~/CUDA\_SDK)
-     set(CUDA\_SDK\_ROOT\_DIR ~/CUDA\_SDK)
+     set(CUDA_TOOLKIT_ROOT_DIR ~/CUDA_SDK)
+     set(CUDA_SDK\_ROOT_DIR ~/CUDA_SDK)
      
-     set(CUDA\_NVCC\_FLAGS --compiler-bindir ~/CUDA\_SDK/gcc/)
+     set(CUDA_NVCC_FLAGS --compiler-bindir ~/CUDA_SDK/gcc/)
      
-     set(CUDA\_BUILD\_EMULATION OFF)
-     set(CUDA\_BUILD\_CUBIN ON)
+     set(CUDA_BUILD_EMULATION OFF)
+     set(CUDA_BUILD_CUBIN ON)
 
 then run cmake and build the projects with make.
